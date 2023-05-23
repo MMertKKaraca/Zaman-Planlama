@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Platform } from 'react-native';
+import  BottomTabs  from './components/BottomTabs';
+import {NavigationContainer} from '@react-navigation/native';
+import * as SQLite from 'expo-sqlite'
+import { useEffect } from 'react';
 
-export default function App() {
+
+const App = ()=> {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <BottomTabs/>
+    </NavigationContainer>
   );
 }
 
@@ -17,4 +22,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'stretch',
+    justifyContent: 'space-between',
+    margin: 8
+  }
 });
+
+export default App;
