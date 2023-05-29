@@ -1,8 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
+
 import { StyleSheet, Text, View, TextInput, Button, Platform } from 'react-native';
 import  BottomTabs  from './components/BottomTabs';
 import {NavigationContainer} from '@react-navigation/native';
-import * as SQLite from 'expo-sqlite'
 import { useEffect } from 'react';
 
 

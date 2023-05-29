@@ -213,10 +213,4 @@ const CalendarEvents = () => {
   )
 }
 
-const styles =  StyleSheet.create({
-  calendarStyle:{
-   
-  }
-})
-
 export default CalendarEvents

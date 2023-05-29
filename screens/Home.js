@@ -9,7 +9,6 @@ import { DeleteNotification } from '../components/Notifications';
 import moment from 'moment';
 
 
-
 const response = (itemObj)=>{
   fetch('http://192.168.1.34:8080', {
     method: 'POST',
