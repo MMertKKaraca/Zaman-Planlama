@@ -10,7 +10,7 @@ import moment from 'moment';
 
 
 const response = (itemObj)=>{
-  fetch('http://192.168.1.34:8080', {
+  fetch('http://192.168.137.113:8080', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -168,7 +168,7 @@ const Home = () => {
   
 
   return (
-    <SafeAreaView style={{flex:1,marginTop:35}}>
+    <SafeAreaView style={{flex:1,marginTop:45}}>
       <View style={styles.searchInputContainer}>
         <TextInput style={styles.searchInput} placeholder="Arama" onChangeText={(text)=>searchEvent(text)}/>
         {searchIconVisible? <Image source={require('../asset/search.png')} style={styles.searchIcon}/> : null}
